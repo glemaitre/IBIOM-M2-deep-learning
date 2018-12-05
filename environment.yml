@@ -1,0 +1,7 @@
+name: ibiom
+dependencies:
+  - scikit-learn
+  - keras
+  - pandas
+  - matplotlib
+  - jupyter

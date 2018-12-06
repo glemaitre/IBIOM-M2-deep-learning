@@ -3,6 +3,7 @@ dependencies:
   - scikit-learn
   - keras
   - pandas
+  - scikit-image
   - matplotlib
   - jupyter
-  - imageio
+  - jupyterlab

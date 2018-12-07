@@ -1,5 +1,4 @@
-# IBIOM-M2: Introduction to deep-learning
-
+# IBIOM-M2: A gentle introduction to deep-learning
 ### Instructors
 
 * Guillaume Lemaitre - Inria, Paris-Saclay Center for Data Science
@@ -43,7 +42,7 @@ If you are using `conda`, you can create a specific environment for this
 tutorial with the following commands:
 
 ```bash
-conda env create environment.yml
+conda env create -f environment.yml
 conda activate ibiom  # or source activate pyparis_sklearn
 ```
 

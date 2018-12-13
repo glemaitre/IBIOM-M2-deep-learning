@@ -10,9 +10,10 @@ def sgd_train(X, y, batch_size, max_iter, learning_rate):
         idx = np.random.choice(np.arange(X.shape[0]),
                                size=batch_size)
         X_subset, y_subset = X[idx], y[idx]
-        # compute the gradient
-        dnll = grad_nll(X_subset, y_subset, coefs)
-        # update the parameter
-        coefs -= (learning_rate / X_subset.shape[0]) * dnll
+        for sample_idx in range(X_subset.shape[0]):
+            # compute the gradient
+            dnll = grad_nll(X_subset, y_subset[[sample_idx]], coefs[[sample_idx]])
+            # update the parameter
+            coefs -= learning_rate * dnll
         it += 1
     return coefs

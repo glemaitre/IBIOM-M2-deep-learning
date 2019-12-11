@@ -6,7 +6,7 @@ img_out_avg_pool = avg_pool.predict(img_in)
 # Same operation implemented with a convolution
 
 def my_init(shape=(3, 3, 3, 3), dtype=None):
-    array = np.zeros(shape=shape, dtype=dtype)
+    array = np.zeros(shape=shape, dtype="float32")
     array[:, :, 0, 0] = 1 / 9.
     array[:, :, 1, 1] = 1 / 9.
     array[:, :, 2, 2] = 1 / 9.

@@ -18,7 +18,3 @@ model.add(Dropout(0.5))
 
 # Loss layer 
 model.add(Dense(n_classes, activation='softmax'))
-
-model.compile(loss=keras.losses.categorical_crossentropy,
-              optimizer=keras.optimizers.Adadelta(),
-              metrics=['accuracy'])

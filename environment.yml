@@ -1,9 +1,8 @@
 name: ibiom
 dependencies:
   - scikit-learn
-  - keras
+  - tensorflow
   - pandas
   - scikit-image
   - matplotlib
   - jupyter
-  - jupyterlab
